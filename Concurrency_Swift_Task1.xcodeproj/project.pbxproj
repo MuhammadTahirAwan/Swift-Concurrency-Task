@@ -23,12 +23,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		92104B143093D982007C67F0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolder = None;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		000000000000000000000120 /* MyTool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MyTool; sourceTree = BUILT_PRODUCTS_DIR; };
 		92104B003092C5EC007C67F0 /* Task2_Semaphore_Usage */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Task2_Semaphore_Usage; sourceTree = BUILT_PRODUCTS_DIR; };
 		92104B0B3093957A007C67F0 /* Task3_DispatchGroup_Usage */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Task3_DispatchGroup_Usage; sourceTree = BUILT_PRODUCTS_DIR; };
+		92104B163093D982007C67F0 /* Task4_Synchronization */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Task4_Synchronization; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -45,6 +54,11 @@
 		92104B0C3093957A007C67F0 /* Task3_DispatchGroup_Usage */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Task3_DispatchGroup_Usage;
+			sourceTree = "<group>";
+		};
+		92104B173093D982007C67F0 /* Task4_Synchronization */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Task4_Synchronization;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -65,6 +79,11 @@
 			files = (
 			);
 		};
+		92104B133093D982007C67F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -74,6 +93,7 @@
 				000000000000000000000010 /* MyTool */,
 				92104B013092C5EC007C67F0 /* Task2_Semaphore_Usage */,
 				92104B0C3093957A007C67F0 /* Task3_DispatchGroup_Usage */,
+				92104B173093D982007C67F0 /* Task4_Synchronization */,
 				000000000000000000000020 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,6 +104,7 @@
 				000000000000000000000120 /* MyTool */,
 				92104B003092C5EC007C67F0 /* Task2_Semaphore_Usage */,
 				92104B0B3093957A007C67F0 /* Task3_DispatchGroup_Usage */,
+				92104B163093D982007C67F0 /* Task4_Synchronization */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,6 +165,24 @@
 			productReference = 92104B0B3093957A007C67F0 /* Task3_DispatchGroup_Usage */;
 			productType = "com.apple.product-type.tool";
 		};
+		92104B153093D982007C67F0 /* Task4_Synchronization */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92104B1A3093D982007C67F0 /* Build configuration list for PBXNativeTarget "Task4_Synchronization" */;
+			buildPhases = (
+				92104B123093D982007C67F0 /* Sources */,
+				92104B133093D982007C67F0 /* Frameworks */,
+				92104B143093D982007C67F0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				92104B173093D982007C67F0 /* Task4_Synchronization */,
+			);
+			name = Task4_Synchronization;
+			productName = Task4_Synchronization;
+			productReference = 92104B163093D982007C67F0 /* Task4_Synchronization */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -161,6 +200,9 @@
 						CreatedOnToolsVersion = 27.1;
 					};
 					92104B0A3093957A007C67F0 = {
+						CreatedOnToolsVersion = 27.1;
+					};
+					92104B153093D982007C67F0 = {
 						CreatedOnToolsVersion = 27.1;
 					};
 				};
@@ -182,6 +224,7 @@
 				000000000000000100000000 /* MyTool */,
 				92104AFF3092C5EC007C67F0 /* Task2_Semaphore_Usage */,
 				92104B0A3093957A007C67F0 /* Task3_DispatchGroup_Usage */,
+				92104B153093D982007C67F0 /* Task4_Synchronization */,
 			);
 		};
 /* End PBXProject section */
@@ -198,6 +241,11 @@
 			);
 		};
 		92104B073093957A007C67F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		92104B123093D982007C67F0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
 			);
@@ -413,6 +461,30 @@
 			};
 			name = Release;
 		};
+		92104B1B3093D982007C67F0 /* Debug configuration for PBXNativeTarget "Task4_Synchronization" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		92104B1C3093D982007C67F0 /* Release configuration for PBXNativeTarget "Task4_Synchronization" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -445,6 +517,14 @@
 			buildConfigurations = (
 				92104B103093957A007C67F0 /* Debug configuration for PBXNativeTarget "Task3_DispatchGroup_Usage" */,
 				92104B113093957A007C67F0 /* Release configuration for PBXNativeTarget "Task3_DispatchGroup_Usage" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		92104B1A3093D982007C67F0 /* Build configuration list for PBXNativeTarget "Task4_Synchronization" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92104B1B3093D982007C67F0 /* Debug configuration for PBXNativeTarget "Task4_Synchronization" */,
+				92104B1C3093D982007C67F0 /* Release configuration for PBXNativeTarget "Task4_Synchronization" */,
 			);
 			defaultConfigurationName = Release;
 		};
